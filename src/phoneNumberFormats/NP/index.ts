@@ -2,11 +2,11 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '../../types/PhoneNumberData.';
 
-import { format2 } from '../../constants';
+import { format3 } from '../../constants.';
 
 /** Nepal */
-const NP: PhoneNumberData = [977, 'NP', 10, format2];
+const NP: PhoneNumberData = [977, 'NP', 10, format3];
 
 export default NP;

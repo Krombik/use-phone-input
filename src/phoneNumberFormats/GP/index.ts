@@ -2,11 +2,11 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '../../types/PhoneNumberData.';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants.';
 
 /** Guadeloupe */
-const GP: PhoneNumberData = [590, 'GP', 9, format3];
+const GP: PhoneNumberData = [590, 'GP', 9, format4];
 
 export default GP;
