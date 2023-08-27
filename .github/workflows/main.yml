@@ -1,0 +1,22 @@
+name: "cron-action"
+on:
+  schedule:
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  singleJobName:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: Update metadata
+        uses: Krombik/action-update-phone-metadata@main
+        with:
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+          constants-file-path: 'constants.ts'
+          phone-number-data-type-file-path: 'types/PhoneNumberData.ts'
+          iso2-type-file-path: 'types/ISO2.ts'
+          phone-number-utils-folder-path: 'phoneNumberUtils'
+          create-phone-number-utils-folder-path: 'createPhoneNumberUtils'
+          phone-number-formats-folder-path: 'phoneNumberFormats'
+          phone-number-validation-patterns-folder-path: 'phoneNumberValidationPatterns'
