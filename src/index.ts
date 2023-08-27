@@ -12,6 +12,6 @@ export { default as isPhoneNumberValid } from './isPhoneNumberValid';
 
 export type { PhoneNumber, PhoneNumberUtils } from './types';
 
-export type { default as ISO2 } from './types/iso2';
+export type { default as ISO2 } from './types/ISO2';
 
 export type { default as PhoneNumberData } from './types/PhoneNumberData';
