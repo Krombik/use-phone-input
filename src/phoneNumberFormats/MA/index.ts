@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format2 } from '../../constants';
+import { format3 } from '../../constants';
 
 /** Morocco */
-const MA: PhoneNumberData = [212, 'MA', 9, format2];
+const MA: PhoneNumberData = [212, 'MA', 9, format3];
 
 export default MA;

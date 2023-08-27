@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Nigeria */
-const NG: PhoneNumberData = [234, 'NG', 10, format1];
+const NG: PhoneNumberData = [234, 'NG', 10, format2];
 
 export default NG;

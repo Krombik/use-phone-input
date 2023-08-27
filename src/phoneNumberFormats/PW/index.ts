@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Palau */
-const PW: PhoneNumberData = [680, 'PW', 7, format6];
+const PW: PhoneNumberData = [680, 'PW', 7, format7];
 
 export default PW;

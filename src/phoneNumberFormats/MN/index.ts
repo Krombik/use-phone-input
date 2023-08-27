@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format9 } from '../../constants';
+import { format10 } from '../../constants';
 
 /** Mongolia */
-const MN: PhoneNumberData = [976, 'MN', 8, format9];
+const MN: PhoneNumberData = [976, 'MN', 8, format10];
 
 export default MN;

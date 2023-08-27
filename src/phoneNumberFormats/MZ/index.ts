@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Mozambique */
-const MZ: PhoneNumberData = [258, 'MZ', 9, format4];
+const MZ: PhoneNumberData = [258, 'MZ', 9, format5];
 
 export default MZ;

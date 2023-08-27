@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Samoa */
-const WS: PhoneNumberData = [685, 'WS', 7, format11];
+const WS: PhoneNumberData = [685, 'WS', 7, format1];
 
 export default WS;

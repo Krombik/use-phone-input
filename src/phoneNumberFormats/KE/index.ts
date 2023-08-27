@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Kenya */
-const KE: PhoneNumberData = [254, 'KE', 9, format6];
+const KE: PhoneNumberData = [254, 'KE', 9, format7];
 
 export default KE;

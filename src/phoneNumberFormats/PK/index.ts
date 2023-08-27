@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Pakistan */
-const PK: PhoneNumberData = [92, 'PK', 10, format6];
+const PK: PhoneNumberData = [92, 'PK', 10, format7];
 
 export default PK;

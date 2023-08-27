@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Equatorial Guinea */
-const GQ: PhoneNumberData = [240, 'GQ', 9, format1];
+const GQ: PhoneNumberData = [240, 'GQ', 9, format2];
 
 export default GQ;

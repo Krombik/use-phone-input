@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Wallis & Futuna */
-const WF: PhoneNumberData = [681, 'WF', 6, format8];
+const WF: PhoneNumberData = [681, 'WF', 6, format9];
 
 export default WF;

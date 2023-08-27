@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Czechia */
-const CZ: PhoneNumberData = [420, 'CZ', 9, format1];
+const CZ: PhoneNumberData = [420, 'CZ', 9, format2];
 
 export default CZ;

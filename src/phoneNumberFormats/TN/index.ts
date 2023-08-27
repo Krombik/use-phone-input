@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Tunisia */
-const TN: PhoneNumberData = [216, 'TN', 8, format4];
+const TN: PhoneNumberData = [216, 'TN', 8, format5];
 
 export default TN;

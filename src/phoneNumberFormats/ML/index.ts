@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Mali */
-const ML: PhoneNumberData = [223, 'ML', 8, format8];
+const ML: PhoneNumberData = [223, 'ML', 8, format9];
 
 export default ML;

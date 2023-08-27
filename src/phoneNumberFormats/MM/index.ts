@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Myanmar (Burma) */
-const MM: PhoneNumberData = [95, 'MM', 8, format10, 10, '0 000 000 000'];
+const MM: PhoneNumberData = [95, 'MM', 8, format11, 10, '0 000 000 000'];
 
 export default MM;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Uganda */
-const UG: PhoneNumberData = [256, 'UG', 9, format6];
+const UG: PhoneNumberData = [256, 'UG', 9, format7];
 
 export default UG;

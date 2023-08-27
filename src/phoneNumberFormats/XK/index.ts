@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Kosovo */
-const XK: PhoneNumberData = [383, 'XK', 8, format4];
+const XK: PhoneNumberData = [383, 'XK', 8, format5];
 
 export default XK;

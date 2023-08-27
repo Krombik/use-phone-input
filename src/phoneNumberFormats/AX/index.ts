@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Åland Islands */
-const AX: PhoneNumberData = [358, 'AX', 10, format11, /^(?:18)/];
+const AX: PhoneNumberData = [358, 'AX', 10, format1, /^(?:18)/];
 
 export default AX;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Togo */
-const TG: PhoneNumberData = [228, 'TG', 8, format8];
+const TG: PhoneNumberData = [228, 'TG', 8, format9];
 
 export default TG;

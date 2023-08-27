@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Palestine */
-const PS: PhoneNumberData = [970, 'PS', 9, format1];
+const PS: PhoneNumberData = [970, 'PS', 9, format2];
 
 export default PS;

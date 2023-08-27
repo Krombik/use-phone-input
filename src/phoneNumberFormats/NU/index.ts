@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Niue */
-const NU: PhoneNumberData = [683, 'NU', 7, format6];
+const NU: PhoneNumberData = [683, 'NU', 7, format7];
 
 export default NU;

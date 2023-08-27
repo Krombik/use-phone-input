@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Vatican City */
-const VA: PhoneNumberData = [39, 'VA', 10, format1, /^(?:06698)/];
+const VA: PhoneNumberData = [39, 'VA', 10, format2, /^(?:06698)/];
 
 export default VA;

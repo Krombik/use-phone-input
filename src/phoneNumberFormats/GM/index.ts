@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Gambia */
-const GM: PhoneNumberData = [220, 'GM', 7, format6];
+const GM: PhoneNumberData = [220, 'GM', 7, format7];
 
 export default GM;

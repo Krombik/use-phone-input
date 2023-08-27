@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Bhutan */
-const BT: PhoneNumberData = [975, 'BT', 8, format8];
+const BT: PhoneNumberData = [975, 'BT', 8, format9];
 
 export default BT;

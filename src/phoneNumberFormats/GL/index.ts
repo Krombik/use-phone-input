@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Greenland */
-const GL: PhoneNumberData = [299, 'GL', 6, format8];
+const GL: PhoneNumberData = [299, 'GL', 6, format9];
 
 export default GL;

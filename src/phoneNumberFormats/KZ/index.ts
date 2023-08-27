@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Kazakhstan */
-const KZ: PhoneNumberData = [7, 'KZ', 10, format1, /^(?:33|7)/];
+const KZ: PhoneNumberData = [7, 'KZ', 10, format2, /^(?:33|7)/];
 
 export default KZ;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Lithuania */
-const LT: PhoneNumberData = [370, 'LT', 8, format6];
+const LT: PhoneNumberData = [370, 'LT', 8, format7];
 
 export default LT;

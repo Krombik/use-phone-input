@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
 /** Georgia */
-const GE: PhoneNumberData = [995, 'GE', 9, format3];
+const GE: PhoneNumberData = [995, 'GE', 9, format4];
 
 export default GE;
