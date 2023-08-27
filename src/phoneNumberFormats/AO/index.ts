@@ -2,11 +2,11 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '../../types/PhoneNumberData.ts';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants.ts';
 
 /** Angola */
-const AO: PhoneNumberData = [244, 'AO', 9, format1];
+const AO: PhoneNumberData = [244, 'AO', 9, format2];
 
 export default AO;

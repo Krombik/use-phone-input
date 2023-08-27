@@ -2,11 +2,11 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '../../types/PhoneNumberData.ts';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants.ts';
 
 /** Finland */
-const FI: PhoneNumberData = [358, 'FI', 10, format11];
+const FI: PhoneNumberData = [358, 'FI', 10, format1];
 
 export default FI;

@@ -2,11 +2,11 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '../../types/PhoneNumberData.ts';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants.ts';
 
 /** Seychelles */
-const SC: PhoneNumberData = [248, 'SC', 7, format10];
+const SC: PhoneNumberData = [248, 'SC', 7, format11];
 
 export default SC;

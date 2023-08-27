@@ -2,9 +2,9 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '../../types/PhoneNumberData.ts';
 
-import { format14 } from '../../constants';
+import { format14 } from '../../constants.ts';
 
 /** Tokelau */
 const TK: PhoneNumberData = [690, 'TK', 7, format14];
