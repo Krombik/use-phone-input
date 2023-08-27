@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Turkmenistan */
-const TM: PhoneNumberData = [993, 'TM', 8, format11];
+const TM: PhoneNumberData = [993, 'TM', 8, format1];
 
 export default TM;

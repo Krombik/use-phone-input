@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Brunei */
-const BN: PhoneNumberData = [673, 'BN', 7, format6];
+const BN: PhoneNumberData = [673, 'BN', 7, format7];
 
 export default BN;

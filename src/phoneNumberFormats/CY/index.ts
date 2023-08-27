@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Cyprus */
-const CY: PhoneNumberData = [357, 'CY', 8, format11];
+const CY: PhoneNumberData = [357, 'CY', 8, format1];
 
 export default CY;

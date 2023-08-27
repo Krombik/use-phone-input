@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format9 } from '../../constants';
+import { format10 } from '../../constants';
 
 /** Eswatini */
-const SZ: PhoneNumberData = [268, 'SZ', 8, format9];
+const SZ: PhoneNumberData = [268, 'SZ', 8, format10];
 
 export default SZ;

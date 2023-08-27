@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Andorra */
-const AD: PhoneNumberData = [376, 'AD', 9, format1];
+const AD: PhoneNumberData = [376, 'AD', 9, format2];
 
 export default AD;

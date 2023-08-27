@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Serbia */
-const RS: PhoneNumberData = [381, 'RS', 9, format11];
+const RS: PhoneNumberData = [381, 'RS', 9, format1];
 
 export default RS;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Svalbard & Jan Mayen */
-const SJ: PhoneNumberData = [47, 'SJ', 8, format8, /^(?:79)/];
+const SJ: PhoneNumberData = [47, 'SJ', 8, format9, /^(?:79)/];
 
 export default SJ;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Albania */
-const AL: PhoneNumberData = [355, 'AL', 9, format4];
+const AL: PhoneNumberData = [355, 'AL', 9, format5];
 
 export default AL;

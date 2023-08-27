@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Tanzania */
-const TZ: PhoneNumberData = [255, 'TZ', 9, format1];
+const TZ: PhoneNumberData = [255, 'TZ', 9, format2];
 
 export default TZ;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Kuwait */
-const KW: PhoneNumberData = [965, 'KW', 8, format6];
+const KW: PhoneNumberData = [965, 'KW', 8, format7];
 
 export default KW;

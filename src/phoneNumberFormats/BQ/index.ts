@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Caribbean Netherlands */
-const BQ: PhoneNumberData = [599, 'BQ', 7, format6, /^(?:[347])/];
+const BQ: PhoneNumberData = [599, 'BQ', 7, format7, /^(?:[347])/];
 
 export default BQ;

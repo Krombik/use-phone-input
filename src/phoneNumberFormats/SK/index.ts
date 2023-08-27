@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Slovakia */
-const SK: PhoneNumberData = [421, 'SK', 9, format1];
+const SK: PhoneNumberData = [421, 'SK', 9, format2];
 
 export default SK;

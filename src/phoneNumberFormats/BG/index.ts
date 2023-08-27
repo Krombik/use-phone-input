@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Bulgaria */
-const BG: PhoneNumberData = [359, 'BG', 8, format4, 9, format1];
+const BG: PhoneNumberData = [359, 'BG', 8, format5, 9, format2];
 
 export default BG;

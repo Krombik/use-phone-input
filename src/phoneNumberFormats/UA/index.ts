@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Ukraine */
-const UA: PhoneNumberData = [380, 'UA', 9, format4];
+const UA: PhoneNumberData = [380, 'UA', 9, format5];
 
 export default UA;

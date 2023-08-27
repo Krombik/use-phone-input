@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Liberia */
-const LR: PhoneNumberData = [231, 'LR', 7, format10, 9, format4];
+const LR: PhoneNumberData = [231, 'LR', 7, format11, 9, format5];
 
 export default LR;

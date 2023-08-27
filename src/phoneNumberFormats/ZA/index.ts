@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** South Africa */
-const ZA: PhoneNumberData = [27, 'ZA', 6, format11, 9, format4];
+const ZA: PhoneNumberData = [27, 'ZA', 6, format1, 9, format5];
 
 export default ZA;

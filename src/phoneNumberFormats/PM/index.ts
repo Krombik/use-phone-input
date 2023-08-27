@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** St. Pierre & Miquelon */
-const PM: PhoneNumberData = [508, 'PM', 6, format8, 9, format1];
+const PM: PhoneNumberData = [508, 'PM', 6, format9, 9, format2];
 
 export default PM;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Central African Republic */
-const CF: PhoneNumberData = [236, 'CF', 8, format8];
+const CF: PhoneNumberData = [236, 'CF', 8, format9];
 
 export default CF;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** New Zealand */
-const NZ: PhoneNumberData = [64, 'NZ', 8, format4, 10, '00 0000 0000'];
+const NZ: PhoneNumberData = [64, 'NZ', 8, format5, 10, '00 0000 0000'];
 
 export default NZ;

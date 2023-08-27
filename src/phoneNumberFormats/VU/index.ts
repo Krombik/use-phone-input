@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Vanuatu */
-const VU: PhoneNumberData = [678, 'VU', 7, format6];
+const VU: PhoneNumberData = [678, 'VU', 7, format7];
 
 export default VU;

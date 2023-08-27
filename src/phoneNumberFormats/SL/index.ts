@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Sierra Leone */
-const SL: PhoneNumberData = [232, 'SL', 8, format11];
+const SL: PhoneNumberData = [232, 'SL', 8, format1];
 
 export default SL;

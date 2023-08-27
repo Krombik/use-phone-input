@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Niger */
-const NE: PhoneNumberData = [227, 'NE', 8, format8];
+const NE: PhoneNumberData = [227, 'NE', 8, format9];
 
 export default NE;

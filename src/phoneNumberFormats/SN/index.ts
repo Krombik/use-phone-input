@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format7 } from '../../constants';
+import { format8 } from '../../constants';
 
 /** Senegal */
-const SN: PhoneNumberData = [221, 'SN', 9, format7];
+const SN: PhoneNumberData = [221, 'SN', 9, format8];
 
 export default SN;

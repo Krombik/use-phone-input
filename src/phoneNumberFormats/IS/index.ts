@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Iceland */
-const IS: PhoneNumberData = [354, 'IS', 7, format6, 9, format1];
+const IS: PhoneNumberData = [354, 'IS', 7, format7, 9, format2];
 
 export default IS;

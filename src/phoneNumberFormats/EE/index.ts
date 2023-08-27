@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
-import { format9 } from '../../constants';
+import { format10 } from '../../constants';
 
 /** Estonia */
-const EE: PhoneNumberData = [372, 'EE', 7, format6, 8, format9];
+const EE: PhoneNumberData = [372, 'EE', 7, format7, 8, format10];
 
 export default EE;

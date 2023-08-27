@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
 /** Comoros */
-const KM: PhoneNumberData = [269, 'KM', 7, format3];
+const KM: PhoneNumberData = [269, 'KM', 7, format4];
 
 export default KM;

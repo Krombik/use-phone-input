@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Aruba */
-const AW: PhoneNumberData = [297, 'AW', 7, format6];
+const AW: PhoneNumberData = [297, 'AW', 7, format7];
 
 export default AW;

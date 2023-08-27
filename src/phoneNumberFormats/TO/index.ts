@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Tonga */
-const TO: PhoneNumberData = [676, 'TO', 7, format6];
+const TO: PhoneNumberData = [676, 'TO', 7, format7];
 
 export default TO;

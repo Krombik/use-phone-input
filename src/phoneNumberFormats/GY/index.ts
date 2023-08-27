@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Guyana */
-const GY: PhoneNumberData = [592, 'GY', 7, format6];
+const GY: PhoneNumberData = [592, 'GY', 7, format7];
 
 export default GY;

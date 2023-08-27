@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Cook Islands */
-const CK: PhoneNumberData = [682, 'CK', 5, format4];
+const CK: PhoneNumberData = [682, 'CK', 5, format1];
 
 export default CK;

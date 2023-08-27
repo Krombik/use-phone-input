@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Micronesia */
-const FM: PhoneNumberData = [691, 'FM', 7, format6];
+const FM: PhoneNumberData = [691, 'FM', 7, format7];
 
 export default FM;

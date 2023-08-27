@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Zimbabwe */
-const ZW: PhoneNumberData = [263, 'ZW', 9, format4];
+const ZW: PhoneNumberData = [263, 'ZW', 9, format5];
 
 export default ZW;

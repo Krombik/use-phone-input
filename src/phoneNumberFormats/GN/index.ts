@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
 /** Guinea */
-const GN: PhoneNumberData = [224, 'GN', 9, format3];
+const GN: PhoneNumberData = [224, 'GN', 9, format4];
 
 export default GN;
