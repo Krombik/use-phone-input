@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** South Sudan */
-const SS: PhoneNumberData = [211, 'SS', 9, format1];
+const SS: PhoneNumberData = [211, 'SS', 9, format2];
 
 export default SS;

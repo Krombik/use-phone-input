@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Tajikistan */
-const TJ: PhoneNumberData = [992, 'TJ', 9, format4];
+const TJ: PhoneNumberData = [992, 'TJ', 9, format5];
 
 export default TJ;

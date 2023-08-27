@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Austria */
-const AT: PhoneNumberData = [43, 'AT', 13, format6];
+const AT: PhoneNumberData = [43, 'AT', 13, format7];
 
 export default AT;

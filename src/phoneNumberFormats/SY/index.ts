@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Syria */
-const SY: PhoneNumberData = [963, 'SY', 9, format1];
+const SY: PhoneNumberData = [963, 'SY', 9, format2];
 
 export default SY;

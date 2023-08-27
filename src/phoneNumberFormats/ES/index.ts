@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
 /** Spain */
-const ES: PhoneNumberData = [34, 'ES', 9, format3];
+const ES: PhoneNumberData = [34, 'ES', 9, format4];
 
 export default ES;

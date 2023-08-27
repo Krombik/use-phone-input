@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Afghanistan */
-const AF: PhoneNumberData = [93, 'AF', 9, format4];
+const AF: PhoneNumberData = [93, 'AF', 9, format5];
 
 export default AF;

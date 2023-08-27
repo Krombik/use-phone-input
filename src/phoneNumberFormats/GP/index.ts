@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
 /** Guadeloupe */
-const GP: PhoneNumberData = [590, 'GP', 9, format3];
+const GP: PhoneNumberData = [590, 'GP', 9, format4];
 
 export default GP;

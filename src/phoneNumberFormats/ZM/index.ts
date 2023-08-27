@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Zambia */
-const ZM: PhoneNumberData = [260, 'ZM', 9, format11];
+const ZM: PhoneNumberData = [260, 'ZM', 9, format1];
 
 export default ZM;

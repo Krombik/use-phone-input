@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Paraguay */
-const PY: PhoneNumberData = [595, 'PY', 9, format6];
+const PY: PhoneNumberData = [595, 'PY', 9, format7];
 
 export default PY;

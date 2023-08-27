@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Angola */
-const AO: PhoneNumberData = [244, 'AO', 9, format1];
+const AO: PhoneNumberData = [244, 'AO', 9, format2];
 
 export default AO;

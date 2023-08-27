@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format9 } from '../../constants';
+import { format10 } from '../../constants';
 
 /** Nicaragua */
-const NI: PhoneNumberData = [505, 'NI', 8, format9];
+const NI: PhoneNumberData = [505, 'NI', 8, format10];
 
 export default NI;

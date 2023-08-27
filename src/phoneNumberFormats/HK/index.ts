@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format9 } from '../../constants';
+import { format10 } from '../../constants';
 
 /** Hong Kong */
-const HK: PhoneNumberData = [852, 'HK', 8, format9];
+const HK: PhoneNumberData = [852, 'HK', 8, format10];
 
 export default HK;

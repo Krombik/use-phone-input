@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format9 } from '../../constants';
+import { format10 } from '../../constants';
 
 /** Oman */
-const OM: PhoneNumberData = [968, 'OM', 8, format9];
+const OM: PhoneNumberData = [968, 'OM', 8, format10];
 
 export default OM;

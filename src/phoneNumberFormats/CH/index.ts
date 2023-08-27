@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format7 } from '../../constants';
+import { format8 } from '../../constants';
 
 /** Switzerland */
-const CH: PhoneNumberData = [41, 'CH', 9, format7];
+const CH: PhoneNumberData = [41, 'CH', 9, format8];
 
 export default CH;

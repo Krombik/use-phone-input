@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Montenegro */
-const ME: PhoneNumberData = [382, 'ME', 8, format4];
+const ME: PhoneNumberData = [382, 'ME', 8, format5];
 
 export default ME;

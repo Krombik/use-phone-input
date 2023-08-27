@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Iran */
-const IR: PhoneNumberData = [98, 'IR', 10, format1];
+const IR: PhoneNumberData = [98, 'IR', 10, format2];
 
 export default IR;

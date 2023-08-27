@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Italy */
-const IT: PhoneNumberData = [39, 'IT', 10, format1];
+const IT: PhoneNumberData = [39, 'IT', 10, format2];
 
 export default IT;

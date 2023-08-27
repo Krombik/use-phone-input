@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Armenia */
-const AM: PhoneNumberData = [374, 'AM', 8, format11];
+const AM: PhoneNumberData = [374, 'AM', 8, format1];
 
 export default AM;

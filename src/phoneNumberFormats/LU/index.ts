@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Luxembourg */
-const LU: PhoneNumberData = [352, 'LU', 9, format1];
+const LU: PhoneNumberData = [352, 'LU', 9, format2];
 
 export default LU;
