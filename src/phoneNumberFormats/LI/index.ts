@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Liechtenstein */
-const LI: PhoneNumberData = [423, 'LI', 7, format3, 9, format1];
+const LI: PhoneNumberData = [423, 'LI', 7, format4, 9, format2];
 
 export default LI;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Fiji */
-const FJ: PhoneNumberData = [679, 'FJ', 7, format6];
+const FJ: PhoneNumberData = [679, 'FJ', 7, format7];
 
 export default FJ;

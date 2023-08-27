@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** United Arab Emirates */
-const AE: PhoneNumberData = [971, 'AE', 9, format4];
+const AE: PhoneNumberData = [971, 'AE', 9, format5];
 
 export default AE;

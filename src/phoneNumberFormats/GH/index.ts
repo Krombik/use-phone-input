@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Ghana */
-const GH: PhoneNumberData = [233, 'GH', 9, format4];
+const GH: PhoneNumberData = [233, 'GH', 9, format5];
 
 export default GH;

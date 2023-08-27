@@ -15,34 +15,34 @@ export const MASK_SYMBOL = '0';
 export const format0 = '000-000-0000';
 
 /** @internal */
-export const format1 = '000 000 00000';
+export const format2 = '000 000 00000';
 
 /** @internal */
-export const format11 = '00 0000000000';
+export const format1 = '00 0000000000';
 
 /** @internal */
-export const format4 = '00 000 00000';
+export const format5 = '00 000 00000';
 
 /** @internal */
 export const format15 = '0 00000000';
 
 /** @internal */
-export const format3 = '000 00 00 00';
+export const format4 = '000 00 00 00';
 
 /** @internal */
 export const format12 = '0 00 00 00 00';
 
 /** @internal */
-export const format7 = '00 000 00 00';
+export const format8 = '00 000 00 00';
 
 /** @internal */
-export const format6 = '000 0000000000';
+export const format7 = '000 0000000000';
 
 /** @internal */
-export const format9 = '0000 000000';
+export const format10 = '0000 000000';
 
 /** @internal */
-export const format8 = '00 00 00 0000';
+export const format9 = '00 00 00 0000';
 
 /** @internal */
 export const format18 = '00000 000000';
@@ -54,13 +54,13 @@ export const format21 = '00 0000-0000';
 export const format23 = '0 0000 0000';
 
 /** @internal */
-export const format2 = '000-0000000';
+export const format3 = '000-0000000';
 
 /** @internal */
 export const format30 = '00-0000-0000';
 
 /** @internal */
-export const format10 = '0 000 000000';
+export const format11 = '0 000 000000';
 
 /** @internal */
 export const format13 = '00 00 000 000';

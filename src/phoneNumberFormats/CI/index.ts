@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Côte d’Ivoire */
-const CI: PhoneNumberData = [225, 'CI', 10, format8];
+const CI: PhoneNumberData = [225, 'CI', 10, format9];
 
 export default CI;

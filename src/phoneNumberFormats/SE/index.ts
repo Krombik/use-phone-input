@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format7 } from '../../constants';
+import { format8 } from '../../constants';
 
 /** Sweden */
-const SE: PhoneNumberData = [46, 'SE', 9, format7];
+const SE: PhoneNumberData = [46, 'SE', 9, format8];
 
 export default SE;

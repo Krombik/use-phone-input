@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** São Tomé & Príncipe */
-const ST: PhoneNumberData = [239, 'ST', 7, format6];
+const ST: PhoneNumberData = [239, 'ST', 7, format7];
 
 export default ST;

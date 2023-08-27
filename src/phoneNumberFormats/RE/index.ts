@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
 /** Réunion */
-const RE: PhoneNumberData = [262, 'RE', 9, format3];
+const RE: PhoneNumberData = [262, 'RE', 9, format4];
 
 export default RE;

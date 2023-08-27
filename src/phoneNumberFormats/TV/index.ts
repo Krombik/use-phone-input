@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Tuvalu */
-const TV: PhoneNumberData = [688, 'TV', 7, format11];
+const TV: PhoneNumberData = [688, 'TV', 7, format1];
 
 export default TV;

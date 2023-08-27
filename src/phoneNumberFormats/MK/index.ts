@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** North Macedonia */
-const MK: PhoneNumberData = [389, 'MK', 8, format4];
+const MK: PhoneNumberData = [389, 'MK', 8, format5];
 
 export default MK;

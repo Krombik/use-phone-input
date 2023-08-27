@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Finland */
-const FI: PhoneNumberData = [358, 'FI', 10, format11];
+const FI: PhoneNumberData = [358, 'FI', 10, format1];
 
 export default FI;

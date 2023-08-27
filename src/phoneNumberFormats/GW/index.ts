@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Guinea-Bissau */
-const GW: PhoneNumberData = [245, 'GW', 9, format1];
+const GW: PhoneNumberData = [245, 'GW', 9, format2];
 
 export default GW;

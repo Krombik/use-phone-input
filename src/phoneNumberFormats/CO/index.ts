@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format6 } from '../../constants';
+import { format7 } from '../../constants';
 
 /** Colombia */
-const CO: PhoneNumberData = [57, 'CO', 10, format6];
+const CO: PhoneNumberData = [57, 'CO', 10, format7];
 
 export default CO;

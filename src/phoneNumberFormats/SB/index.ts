@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format1 } from '../../constants';
 
 /** Solomon Islands */
-const SB: PhoneNumberData = [677, 'SB', 7, format11];
+const SB: PhoneNumberData = [677, 'SB', 7, format1];
 
 export default SB;

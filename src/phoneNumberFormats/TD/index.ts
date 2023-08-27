@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Chad */
-const TD: PhoneNumberData = [235, 'TD', 8, format8];
+const TD: PhoneNumberData = [235, 'TD', 8, format9];
 
 export default TD;

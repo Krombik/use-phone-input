@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Hungary */
-const HU: PhoneNumberData = [36, 'HU', 9, format4];
+const HU: PhoneNumberData = [36, 'HU', 9, format5];
 
 export default HU;

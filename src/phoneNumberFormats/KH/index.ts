@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Cambodia */
-const KH: PhoneNumberData = [855, 'KH', 8, format4];
+const KH: PhoneNumberData = [855, 'KH', 8, format5];
 
 export default KH;

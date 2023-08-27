@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
 /** French Guiana */
-const GF: PhoneNumberData = [594, 'GF', 9, format3];
+const GF: PhoneNumberData = [594, 'GF', 9, format4];
 
 export default GF;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Botswana */
-const BW: PhoneNumberData = [267, 'BW', 8, format4];
+const BW: PhoneNumberData = [267, 'BW', 8, format5];
 
 export default BW;

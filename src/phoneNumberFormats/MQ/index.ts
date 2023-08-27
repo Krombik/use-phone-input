@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
 /** Martinique */
-const MQ: PhoneNumberData = [596, 'MQ', 9, format3];
+const MQ: PhoneNumberData = [596, 'MQ', 9, format4];
 
 export default MQ;

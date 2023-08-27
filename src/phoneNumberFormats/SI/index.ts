@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Slovenia */
-const SI: PhoneNumberData = [386, 'SI', 8, format4];
+const SI: PhoneNumberData = [386, 'SI', 8, format5];
 
 export default SI;

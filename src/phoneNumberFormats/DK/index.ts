@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Denmark */
-const DK: PhoneNumberData = [45, 'DK', 8, format8];
+const DK: PhoneNumberData = [45, 'DK', 8, format9];
 
 export default DK;

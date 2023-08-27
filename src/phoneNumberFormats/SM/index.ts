@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format8 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** San Marino */
-const SM: PhoneNumberData = [378, 'SM', 8, format8];
+const SM: PhoneNumberData = [378, 'SM', 8, format9];
 
 export default SM;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format4 } from '../../constants';
 
 /** Algeria */
-const DZ: PhoneNumberData = [213, 'DZ', 9, format3];
+const DZ: PhoneNumberData = [213, 'DZ', 9, format4];
 
 export default DZ;

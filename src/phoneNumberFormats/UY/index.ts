@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Uruguay */
-const UY: PhoneNumberData = [598, 'UY', 8, format4];
+const UY: PhoneNumberData = [598, 'UY', 8, format5];
 
 export default UY;

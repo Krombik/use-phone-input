@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format4 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Ecuador */
-const EC: PhoneNumberData = [593, 'EC', 9, format4];
+const EC: PhoneNumberData = [593, 'EC', 9, format5];
 
 export default EC;

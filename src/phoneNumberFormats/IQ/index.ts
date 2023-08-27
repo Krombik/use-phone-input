@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { format2 } from '../../constants';
 
 /** Iraq */
-const IQ: PhoneNumberData = [964, 'IQ', 10, format1];
+const IQ: PhoneNumberData = [964, 'IQ', 10, format2];
 
 export default IQ;
