@@ -1,4 +1,4 @@
-import ISO2 from './iso2';
+import ISO2 from './ISO2';
 
 type PhoneNumberMainData = [
   countryCode: number,

@@ -1,6 +1,6 @@
 import type { DataTuple, PhoneNumberUtils, PhoneNumber } from '../types';
 import type PhoneNumberData from '../types/PhoneNumberData';
-import type ISO2 from '../types/iso2';
+import type ISO2 from '../types/ISO2';
 import {
   MASK_SYMBOL,
   MAX_CALLING_CODE_LENGTH,
