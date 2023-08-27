@@ -1,0 +1,53 @@
+{
+  "name": "use-phone-input",
+  "version": "1.0.0",
+  "description": "Simplify phone number handling in React applications with automatic formatting, validation, and country code selection for international numbers",
+  "author": "Krombik",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krombik/use-phone-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Krombik/use-phone-input/issues"
+  },
+  "homepage": "https://github.com/Krombik/use-phone-input#readme",
+  "type": "module",
+  "source": "src/index.ts",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "ts-node ./scripts/build.mts"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0",
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.2.21",
+    "prettier": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "react",
+    "tel",
+    "phone",
+    "number",
+    "input",
+    "telephone",
+    "international"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "react-helpful-utils": "^1.0.1"
+  }
+}
