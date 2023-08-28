@@ -30,7 +30,6 @@ pnpm add use-phone-input
 
 - [useInternationalPhoneInput](#useinternationalphoneinput)
 - [createPhoneNumberUtils](#createphonenumberutils)
-- [phoneNumberUtils](#phonenumberutils)
 - [isPhoneNumberValid](#isphonenumbervalid)
 - [isPhoneNumberValidAsync](#isphonenumbervalidasync)
 
@@ -90,6 +89,7 @@ const PhoneInput = () => {
           setCountry(e.target.value);
         }}
       >
+        <option value=''>-</option>
         {phoneNumberUtils.iso2List.map((iso2) => (
           <option key={iso2} value={iso2}>
             {iso2}
@@ -106,11 +106,11 @@ const PhoneInput = () => {
 
 ### createPhoneNumberUtils
 
-Generate utils for specific list of countries, use it if you need to handle specific countries numbers, otherwise just use [phoneNumberUtils](#phonenumberutils)
+Generate utils for specific list of countries, use it if you need to handle specific countries phone numbers, otherwise just use `phoneNumberUtils`, like in the example above
 
 ```ts
 type PhoneNumberUtils = {
-  toPhoneNumber(value: string): PhoneNumber;
+  toPhoneNumber(value: string, estimatedIso2?: ISO2): PhoneNumber;
   getCountryCode<T extends string>(
     iso2: T
   ): T extends ISO2 ? string : undefined;
@@ -137,19 +137,9 @@ const phoneNumberUtils = createPhoneNumberUtils([CA, US]);
 
 ---
 
-### phoneNumberUtils
-
-Utils for all countries
-
-```ts
-const phoneNumberUtils: PhoneNumberUtils;
-```
-
----
-
 ### isPhoneNumberValid
 
-Check if a given international phone number is valid based on provided phoneValidationPatterns validation patterns
+Checks if the given international phone number is valid based on the provided phone verification patterns
 
 ```ts
 const isPhoneNumberValid: (
@@ -177,7 +167,7 @@ isPhoneNumberValid({ CA, US }, value);
 
 ### isPhoneNumberValidAsync
 
-Check if a given international phone number is valid.
+Checks if a given international phone number is valid
 
 > This method uses [dynamic import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import) under the hood, use only if your builder supports it
 

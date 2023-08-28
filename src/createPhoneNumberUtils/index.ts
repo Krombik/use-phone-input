@@ -1,4 +1,4 @@
-import type { DataTuple, PhoneNumberUtils, PhoneNumber } from '../types';
+import type { PhoneNumberUtils } from '../types';
 import type PhoneNumberData from '../types/PhoneNumberData';
 import type ISO2 from '../types/ISO2';
 import {
@@ -12,7 +12,10 @@ import {
  * @param [prefix='+'] - Default prefix for country calling codes
  * @returns An object containing utility functions for phone number handling
  */
-const createPhoneNumberUtils = (data: PhoneNumberData[], prefix = '+') => {
+const createPhoneNumberUtils = (
+  data: PhoneNumberData[],
+  prefix = '+'
+): PhoneNumberUtils => {
   const callingCodeDataMap = new Map<string, PhoneNumberData[]>();
 
   const iso2DataMap = new Map<string, string>();
@@ -43,45 +46,29 @@ const createPhoneNumberUtils = (data: PhoneNumberData[], prefix = '+') => {
       prefix = newPrefix;
     },
     getCountryCode: iso2DataMap.get.bind(iso2DataMap),
-    toPhoneNumber(value: string, data?: DataTuple): PhoneNumber | undefined {
-      let isSame: boolean | undefined;
-
+    toPhoneNumber(value, estimatedIso2) {
       let countries: PhoneNumberData[] | undefined;
 
       let countryCode: string = '';
 
       const withPrefix = prefix && value.startsWith(prefix);
 
-      const prevValue = data && data[0];
-
       value = (withPrefix ? value.slice(prefix.length) : value).replace(
         /\D/g,
         ''
       );
 
-      if (
-        prevValue &&
-        prevValue.iso2 &&
-        value.startsWith(prevValue.countryCode)
+      for (
+        let i = Math.min(MAX_CALLING_CODE_LENGTH, value.length);
+        i > 0;
+        i--
       ) {
-        isSame = true;
+        countryCode = value.slice(0, i);
 
-        countryCode = prevValue.countryCode;
+        if (callingCodeDataMap.has(countryCode)) {
+          countries = callingCodeDataMap.get(countryCode)!;
 
-        countries = callingCodeDataMap.get(countryCode);
-      } else {
-        for (
-          let i = Math.min(MAX_CALLING_CODE_LENGTH, value.length);
-          i > 0;
-          i--
-        ) {
-          countryCode = value.slice(0, i);
-
-          if (callingCodeDataMap.has(countryCode)) {
-            countries = callingCodeDataMap.get(countryCode)!;
-
-            break;
-          }
+          break;
         }
       }
 
@@ -102,6 +89,8 @@ const createPhoneNumberUtils = (data: PhoneNumberData[], prefix = '+') => {
         } else {
           let mainCountry: PhoneNumberData | undefined;
 
+          let estimatedCountry: PhoneNumberData | undefined;
+
           for (let i = 0; i < countriesCount; i++) {
             const item = countries[i];
 
@@ -111,12 +100,17 @@ const createPhoneNumberUtils = (data: PhoneNumberData[], prefix = '+') => {
 
                 break;
               }
+
+              if (estimatedIso2 == item[1]) {
+                estimatedCountry = item;
+              }
             } else {
               mainCountry = item;
             }
           }
 
-          countryData ||= mainCountry || countries[countriesCount - 1];
+          countryData ||=
+            estimatedCountry || mainCountry || countries[countriesCount - 1];
         }
 
         const formatsEnd = countryData.length - (countryData.length % 2);
@@ -128,9 +122,7 @@ const createPhoneNumberUtils = (data: PhoneNumberData[], prefix = '+') => {
           countryData[formatsEnd - 2] as number
         );
 
-        isSame &&= prevValue && nationalNumber == prevValue.nationalNumber;
-
-        if (nationalNumber && !isSame) {
+        if (nationalNumber) {
           for (let i = 2; i < formatsEnd; i += 2) {
             if (nationalNumber.length <= (countryData[i] as number)) {
               const format = countryData[i + 1] as string;
@@ -159,24 +151,14 @@ const createPhoneNumberUtils = (data: PhoneNumberData[], prefix = '+') => {
         formattedValue += nationalNumber;
       }
 
-      const nextValue: PhoneNumber = {
+      return {
         countryCode,
         iso2,
         nationalNumber,
         formattedValue,
       };
-
-      if (!data) {
-        return nextValue;
-      }
-
-      if (!isSame) {
-        data[0] = nextValue;
-
-        data[1](nextValue);
-      }
     },
-  } as PhoneNumberUtils;
+  };
 };
 
 export default createPhoneNumberUtils;

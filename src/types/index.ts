@@ -18,10 +18,9 @@ export type DataTuple = [
 export interface PhoneNumberUtils {
   /**
    * Convert an input {@link value} into a standardized phone number object.
+   * @param estimatedIso2 - ISO2 code, will be used for country detection if multiple countries have same country code and it can't be detected automatically for the current {@link value}
    */
-  toPhoneNumber(value: string): PhoneNumber;
-  /** @internal */
-  toPhoneNumber(value: string, data: DataTuple): void;
+  toPhoneNumber(value: string, estimatedIso2?: ISO2): PhoneNumber;
   /**
    * Retrieve the country calling code based on an {@link iso2 ISO2} country code
    */
