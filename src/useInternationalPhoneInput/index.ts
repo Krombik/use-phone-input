@@ -1,6 +1,7 @@
 import { DataTuple, PhoneNumberUtils, PhoneNumber } from '../types';
 
 import useConst from 'react-helpful-utils/useConst';
+import ISO2 from '../types/ISO2';
 
 /**
  * @example
@@ -28,6 +29,7 @@ import useConst from 'react-helpful-utils/useConst';
  *           setCountry(e.target.value);
  *         }}
  *       >
+ *         <option value="">-</option>
  *         {phoneNumberUtils.iso2List.map((iso2) => (
  *           <option key={iso2} value={iso2}>
  *             {iso2}
@@ -45,16 +47,43 @@ const useInternationalPhoneInput = (
   value: PhoneNumber,
   onChange: (value: PhoneNumber) => void
 ) => {
-  const data = useConst<DataTuple>(() => [
-    value,
-    onChange,
-    (e) => {
-      utils.toPhoneNumber(e.target.value, data);
-    },
-    (iso2) => {
-      utils.toPhoneNumber(utils.getCountryCode(iso2) || '', data);
-    },
-  ]);
+  const data = useConst<DataTuple>(() => {
+    let estimatedIso2: ISO2 | undefined;
+
+    return [
+      value,
+      onChange,
+      (e) => {
+        const prevValue = data[0];
+
+        const nextValue = utils.toPhoneNumber(e.target.value, estimatedIso2);
+
+        if (prevValue.formattedValue != nextValue.formattedValue) {
+          if (estimatedIso2 && estimatedIso2 != nextValue.iso2) {
+            estimatedIso2 = undefined;
+          }
+
+          data[1](nextValue);
+        }
+      },
+      (iso2) => {
+        const prevValue = data[0];
+
+        if (iso2 != prevValue.iso2) {
+          estimatedIso2 = iso2;
+
+          const nextValue = utils.toPhoneNumber(
+            utils.getCountryCode(iso2) || '',
+            estimatedIso2
+          );
+
+          if (prevValue.formattedValue != nextValue.formattedValue) {
+            data[1](nextValue);
+          }
+        }
+      },
+    ];
+  });
 
   data[0] = value;
 
