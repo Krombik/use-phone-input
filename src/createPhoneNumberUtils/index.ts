@@ -70,7 +70,11 @@ const createPhoneNumberUtils = (data: PhoneNumberData[], prefix = '+') => {
 
         countries = callingCodeDataMap.get(countryCode);
       } else {
-        for (let i = Math.min(MAX_CALLING_CODE_LENGTH, value.length); i--; ) {
+        for (
+          let i = Math.min(MAX_CALLING_CODE_LENGTH, value.length);
+          i > 0;
+          i--
+        ) {
           countryCode = value.slice(0, i);
 
           if (callingCodeDataMap.has(countryCode)) {
