@@ -106,11 +106,13 @@ const createPhoneNumberUtils = (data: PhoneNumberData[], prefix = '+') => {
             const item = countries[i];
 
             if (item.length % 2) {
-              mainCountry = item;
-            } else if ((item[item.length - 1] as RegExp).test(nationalNumber)) {
-              countryData = item;
+              if ((item[item.length - 1] as RegExp).test(nationalNumber)) {
+                countryData = item;
 
-              break;
+                break;
+              }
+            } else {
+              mainCountry = item;
             }
           }
 
