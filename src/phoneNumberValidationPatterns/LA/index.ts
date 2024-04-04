@@ -3,6 +3,6 @@
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
 /** Laos */
-const LA = /^(?:(?:20(?:[2359]\d|7[6-8]|88)|302\d)\d{6})$/;
+const LA = /^(?:2088\d{6}|(?:20[23579]|302)\d{7})$/;
 
 export default LA;
