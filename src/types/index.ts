@@ -1,3 +1,4 @@
+import { FormEventHandler } from 'react';
 import ISO2 from './ISO2';
 
 export type PhoneNumber = {
@@ -11,8 +12,8 @@ export type PhoneNumber = {
 export type DataTuple = [
   currValue: PhoneNumber,
   setValue: (value: PhoneNumber) => void,
-  onChange: (e: { target: { value: string } }) => void,
-  setCountry: (iso2: ISO2) => void
+  onInput: FormEventHandler<HTMLInputElement>,
+  setCountry: (iso2: ISO2) => void,
 ];
 
 export interface PhoneNumberUtils {
