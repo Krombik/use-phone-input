@@ -53,11 +53,7 @@ const useInternationalPhoneInput: (
   inputProps: {
     type: 'tel';
     value: string;
-    onChange(e: {
-      target: {
-        value: string;
-      };
-    }): void;
+    onInput: FormEventHandler<HTMLInputElement>;
   };
   setCountry(iso2: ISO2): void;
 };
