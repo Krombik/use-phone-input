@@ -53,17 +53,51 @@ const useInternationalPhoneInput = (
     return [
       value,
       onChange,
-      (e) => {
-        const prevValue = data[0];
+      ({ target, nativeEvent }) => {
+        let { value: inputValue, selectionStart } = target as HTMLInputElement;
 
-        const nextValue = utils.toPhoneNumber(e.target.value, estimatedIso2);
+        const prevInputValue = data[0].formattedValue;
 
-        if (prevValue.formattedValue != nextValue.formattedValue) {
+        if (
+          selectionStart &&
+          (nativeEvent as InputEvent).inputType == 'deleteContentBackward' &&
+          /\D/.test(prevInputValue[selectionStart])
+        ) {
+          inputValue =
+            inputValue.slice(0, selectionStart - 1) +
+            inputValue.slice(selectionStart--);
+        }
+
+        const nextValue = utils.toPhoneNumber(inputValue, estimatedIso2);
+
+        const nextInputValue = nextValue.formattedValue;
+
+        if (prevInputValue != nextInputValue) {
           if (estimatedIso2 && estimatedIso2 != nextValue.iso2) {
             estimatedIso2 = undefined;
           }
 
           data[1](nextValue);
+        }
+
+        if (selectionStart != inputValue.length) {
+          let nextCaretPosition = 0;
+
+          for (
+            let i = inputValue
+              .slice(0, selectionStart!)
+              .replace(/\D/g, '').length;
+            nextCaretPosition < nextInputValue.length &&
+            (/\D/.test(nextInputValue[nextCaretPosition]) || i--);
+            nextCaretPosition++
+          ) {}
+
+          setTimeout(() => {
+            (target as HTMLInputElement).setSelectionRange(
+              nextCaretPosition,
+              nextCaretPosition
+            );
+          }, 0);
         }
       },
       (iso2) => {
@@ -93,7 +127,7 @@ const useInternationalPhoneInput = (
     inputProps: {
       type: 'tel' as const,
       value: value.formattedValue,
-      onChange: data[2],
+      onInput: data[2],
     },
     setCountry: data[3],
   };
