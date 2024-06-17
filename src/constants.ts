@@ -48,16 +48,13 @@ export const format9 = '00 00 00 0000';
 export const format18 = '00000 000000';
 
 /** @internal */
-export const format21 = '00 0000-0000';
-
-/** @internal */
-export const format23 = '0 0000 0000';
+export const format24 = '0 0000 0000';
 
 /** @internal */
 export const format3 = '000-0000000';
 
 /** @internal */
-export const format30 = '00-0000-0000';
+export const format31 = '00-0000-0000';
 
 /** @internal */
 export const format11 = '0 000 000000';

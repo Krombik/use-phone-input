@@ -4,9 +4,7 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format21 } from '../../constants';
-
 /** Argentina */
-const AR: PhoneNumberData = [54, 'AR', 10, format21];
+const AR: PhoneNumberData = [54, 'AR', 11, '0 00 0000-0000'];
 
 export default AR;
