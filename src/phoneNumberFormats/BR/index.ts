@@ -4,9 +4,7 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format21 } from '../../constants';
-
 /** Brazil */
-const BR: PhoneNumberData = [55, 'BR', 10, format21, 11, '00 00000-0000'];
+const BR: PhoneNumberData = [55, 'BR', 10, '00 0000-0000', 11, '00 00000-0000'];
 
 export default BR;
