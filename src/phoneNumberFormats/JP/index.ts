@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format31 } from '../../constants';
+import { format32 } from '../../constants';
 
 /** Japan */
-const JP: PhoneNumberData = [81, 'JP', 10, format31];
+const JP: PhoneNumberData = [81, 'JP', 10, format32];
 
 export default JP;

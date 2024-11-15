@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format14 } from '../../constants';
+import { format15 } from '../../constants';
 
 /** St. Helena */
-const SH: PhoneNumberData = [290, 'SH', 5, format14];
+const SH: PhoneNumberData = [290, 'SH', 5, format15];
 
 export default SH;

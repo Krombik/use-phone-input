@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Singapore */
-const SG: PhoneNumberData = [65, 'SG', 8, format10];
+const SG: PhoneNumberData = [65, 'SG', 8, format11];
 
 export default SG;
