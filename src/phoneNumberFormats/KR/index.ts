@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format31 } from '../../constants';
+import { format32 } from '../../constants';
 
 /** South Korea */
-const KR: PhoneNumberData = [82, 'KR', 10, format31];
+const KR: PhoneNumberData = [82, 'KR', 10, format32];
 
 export default KR;

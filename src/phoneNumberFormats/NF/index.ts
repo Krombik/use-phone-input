@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format15 } from '../../constants';
+import { format16 } from '../../constants';
 
 /** Norfolk Island */
-const NF: PhoneNumberData = [672, 'NF', 6, format15];
+const NF: PhoneNumberData = [672, 'NF', 6, format16];
 
 export default NF;

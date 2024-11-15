@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** El Salvador */
-const SV: PhoneNumberData = [503, 'SV', 8, format10];
+const SV: PhoneNumberData = [503, 'SV', 8, format11];
 
 export default SV;

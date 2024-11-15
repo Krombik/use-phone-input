@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format19 } from '../../constants';
+import { format20 } from '../../constants';
 
 /** Honduras */
-const HN: PhoneNumberData = [504, 'HN', 8, format19];
+const HN: PhoneNumberData = [504, 'HN', 8, format20];
 
 export default HN;

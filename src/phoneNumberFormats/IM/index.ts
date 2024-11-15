@@ -4,14 +4,14 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Isle of Man */
 const IM: PhoneNumberData = [
   44,
   'IM',
   10,
-  format10,
+  format11,
   /^(?:74576|(?:16|7[56])24)/,
 ];
 

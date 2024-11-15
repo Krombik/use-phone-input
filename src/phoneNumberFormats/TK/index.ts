@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format14 } from '../../constants';
+import { format15 } from '../../constants';
 
 /** Tokelau */
-const TK: PhoneNumberData = [690, 'TK', 7, format14];
+const TK: PhoneNumberData = [690, 'TK', 7, format15];
 
 export default TK;

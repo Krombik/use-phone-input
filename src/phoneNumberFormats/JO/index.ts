@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format24 } from '../../constants';
+import { format25 } from '../../constants';
 
 /** Jordan */
-const JO: PhoneNumberData = [962, 'JO', 9, format24];
+const JO: PhoneNumberData = [962, 'JO', 9, format25];
 
 export default JO;

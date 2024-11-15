@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Mauritius */
-const MU: PhoneNumberData = [230, 'MU', 8, format10];
+const MU: PhoneNumberData = [230, 'MU', 8, format11];
 
 export default MU;

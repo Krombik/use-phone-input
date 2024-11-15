@@ -4,14 +4,14 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Jersey */
 const JE: PhoneNumberData = [
   44,
   'JE',
   10,
-  format10,
+  format11,
   /^(?:7(?:(?:(?:50|82)9|937)|7(?:00[378]|97)))/,
 ];
 

@@ -4,9 +4,7 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format9 } from '../../constants';
-
 /** Benin */
-const BJ: PhoneNumberData = [229, 'BJ', 8, format9];
+const BJ: PhoneNumberData = [229, 'BJ', 10, '00 00 00 00 00'];
 
 export default BJ;

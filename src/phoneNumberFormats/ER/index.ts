@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format12 } from '../../constants';
 
 /** Eritrea */
-const ER: PhoneNumberData = [291, 'ER', 7, format11];
+const ER: PhoneNumberData = [291, 'ER', 7, format12];
 
 export default ER;

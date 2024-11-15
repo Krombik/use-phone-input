@@ -6,9 +6,9 @@ import PhoneNumberData from '../../types/PhoneNumberData';
 
 import { format9 } from '../../constants';
 
-import { format12 } from '../../constants';
+import { format13 } from '../../constants';
 
 /** Monaco */
-const MC: PhoneNumberData = [377, 'MC', 8, format9, 9, format12];
+const MC: PhoneNumberData = [377, 'MC', 8, format9, 9, format13];
 
 export default MC;

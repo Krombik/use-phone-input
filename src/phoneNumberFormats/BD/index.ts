@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format19 } from '../../constants';
+import { format20 } from '../../constants';
 
 /** Bangladesh */
-const BD: PhoneNumberData = [880, 'BD', 10, format19];
+const BD: PhoneNumberData = [880, 'BD', 10, format20];
 
 export default BD;
