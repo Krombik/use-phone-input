@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format12 } from '../../constants';
 
 /** Seychelles */
-const SC: PhoneNumberData = [248, 'SC', 7, format11];
+const SC: PhoneNumberData = [248, 'SC', 7, format12];
 
 export default SC;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Guatemala */
-const GT: PhoneNumberData = [502, 'GT', 8, format10];
+const GT: PhoneNumberData = [502, 'GT', 8, format11];
 
 export default GT;

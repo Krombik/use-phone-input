@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Lesotho */
-const LS: PhoneNumberData = [266, 'LS', 8, format10];
+const LS: PhoneNumberData = [266, 'LS', 8, format11];
 
 export default LS;

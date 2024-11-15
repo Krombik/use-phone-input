@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Timor-Leste */
-const TL: PhoneNumberData = [670, 'TL', 8, format10];
+const TL: PhoneNumberData = [670, 'TL', 8, format11];
 
 export default TL;

@@ -4,14 +4,14 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Guernsey */
 const GG: PhoneNumberData = [
   44,
   'GG',
   10,
-  format10,
+  format11,
   /^(?:7(?:(?:781|839)|911[17]))/,
 ];
 

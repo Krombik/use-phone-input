@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { format12 } from '../../constants';
 
 /** Curaçao */
-const CW: PhoneNumberData = [599, 'CW', 8, format11];
+const CW: PhoneNumberData = [599, 'CW', 8, format12];
 
 export default CW;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Papua New Guinea */
-const PG: PhoneNumberData = [675, 'PG', 8, format10];
+const PG: PhoneNumberData = [675, 'PG', 8, format11];
 
 export default PG;

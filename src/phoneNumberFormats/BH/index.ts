@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Bahrain */
-const BH: PhoneNumberData = [973, 'BH', 8, format10];
+const BH: PhoneNumberData = [973, 'BH', 8, format11];
 
 export default BH;

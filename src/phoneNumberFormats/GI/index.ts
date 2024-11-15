@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format14 } from '../../constants';
+import { format15 } from '../../constants';
 
 /** Gibraltar */
-const GI: PhoneNumberData = [350, 'GI', 8, format14];
+const GI: PhoneNumberData = [350, 'GI', 8, format15];
 
 export default GI;

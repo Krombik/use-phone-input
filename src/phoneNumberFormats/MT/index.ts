@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Malta */
-const MT: PhoneNumberData = [356, 'MT', 8, format10];
+const MT: PhoneNumberData = [356, 'MT', 8, format11];
 
 export default MT;

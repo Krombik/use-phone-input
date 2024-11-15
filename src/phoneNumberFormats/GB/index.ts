@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** United Kingdom */
-const GB: PhoneNumberData = [44, 'GB', 10, format10];
+const GB: PhoneNumberData = [44, 'GB', 10, format11];
 
 export default GB;

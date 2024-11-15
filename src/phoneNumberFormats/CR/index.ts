@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format10 } from '../../constants';
+import { format11 } from '../../constants';
 
 /** Costa Rica */
-const CR: PhoneNumberData = [506, 'CR', 8, format10];
+const CR: PhoneNumberData = [506, 'CR', 8, format11];
 
 export default CR;
