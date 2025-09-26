@@ -3,6 +3,6 @@
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
 /** Kenya */
-const KE = /^(?:(?:1(?:0[0-8]|1[0-7]|2[014]|30)|7\d\d)\d{6})$/;
+const KE = /^(?:(?:1(?:0[0-8]|1\d|2[014]|[34]0)|7\d\d)\d{6})$/;
 
 export default KE;
