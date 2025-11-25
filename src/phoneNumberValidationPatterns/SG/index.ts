@@ -3,6 +3,7 @@
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
 /** Singapore */
-const SG = /^(?:898[02-8]\d{4}|(?:8(?:0[1-9]|[1-8]\d|9[0-7])|9[0-8]\d)\d{5})$/;
+const SG =
+  /^(?:89(?:8[02-9]|90)\d{4}|(?:8(?:0[1-9]|[1-8]\d|9[0-7])|9[0-8]\d)\d{5})$/;
 
 export default SG;
