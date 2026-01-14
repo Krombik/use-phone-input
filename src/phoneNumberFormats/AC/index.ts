@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format15 } from '../../constants';
+import { format14 } from '../../constants';
 
 /** Ascension Island */
-const AC: PhoneNumberData = [247, 'AC', 5, format15];
+const AC: PhoneNumberData = [247, 'AC', 5, format14];
 
 export default AC;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format19 } from '../../constants';
 
 /** Marshall Islands */
-const MH: PhoneNumberData = [692, 'MH', 7, format3];
+const MH: PhoneNumberData = [692, 'MH', 7, format19];
 
 export default MH;

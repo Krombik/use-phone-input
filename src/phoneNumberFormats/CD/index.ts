@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format14 } from '../../constants';
+import { format13 } from '../../constants';
 
 import { format2 } from '../../constants';
 
 /** Congo - Kinshasa */
-const CD: PhoneNumberData = [243, 'CD', 7, format14, 9, format2];
+const CD: PhoneNumberData = [243, 'CD', 7, format13, 9, format2];
 
 export default CD;

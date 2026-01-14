@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format15 } from '../../constants';
+import { format14 } from '../../constants';
 
 /** Falkland Islands (Islas Malvinas) */
-const FK: PhoneNumberData = [500, 'FK', 5, format15];
+const FK: PhoneNumberData = [500, 'FK', 5, format14];
 
 export default FK;

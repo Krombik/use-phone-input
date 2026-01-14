@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format19 } from '../../constants';
 
 /** Belize */
-const BZ: PhoneNumberData = [501, 'BZ', 7, format3];
+const BZ: PhoneNumberData = [501, 'BZ', 7, format19];
 
 export default BZ;
