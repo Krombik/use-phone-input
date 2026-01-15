@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format13 } from '../../constants';
+import { format3 } from '../../constants';
 
 /** Cameroon */
-const CM: PhoneNumberData = [237, 'CM', 9, format13];
+const CM: PhoneNumberData = [237, 'CM', 9, format3];
 
 export default CM;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format15 } from '../../constants';
+import { format14 } from '../../constants';
 
 /** Kiribati */
-const KI: PhoneNumberData = [686, 'KI', 8, format15];
+const KI: PhoneNumberData = [686, 'KI', 8, format14];
 
 export default KI;
