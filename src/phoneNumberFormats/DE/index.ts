@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format19 } from '../../constants';
+import { format18 } from '../../constants';
 
 /** Germany */
-const DE: PhoneNumberData = [49, 'DE', 11, format19];
+const DE: PhoneNumberData = [49, 'DE', 11, format18];
 
 export default DE;

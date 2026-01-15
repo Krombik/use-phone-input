@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format14 } from '../../constants';
+import { format13 } from '../../constants';
 
 /** Madagascar */
-const MG: PhoneNumberData = [261, 'MG', 9, format14];
+const MG: PhoneNumberData = [261, 'MG', 9, format13];
 
 export default MG;

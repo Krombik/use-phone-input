@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format16 } from '../../constants';
+import { format15 } from '../../constants';
 
 import { format2 } from '../../constants';
 
 /** Netherlands */
-const NL: PhoneNumberData = [31, 'NL', 9, format16, 11, format2];
+const NL: PhoneNumberData = [31, 'NL', 9, format15, 11, format2];
 
 export default NL;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format19 } from '../../constants';
 
 /** Venezuela */
-const VE: PhoneNumberData = [58, 'VE', 10, format3];
+const VE: PhoneNumberData = [58, 'VE', 10, format19];
 
 export default VE;
