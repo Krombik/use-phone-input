@@ -6,9 +6,9 @@ import PhoneNumberData from '../../types/PhoneNumberData';
 
 import { format9 } from '../../constants';
 
-import { format14 } from '../../constants';
+import { format13 } from '../../constants';
 
 /** Laos */
-const LA: PhoneNumberData = [856, 'LA', 9, format9, 10, format14];
+const LA: PhoneNumberData = [856, 'LA', 9, format9, 10, format13];
 
 export default LA;

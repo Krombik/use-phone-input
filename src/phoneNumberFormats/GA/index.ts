@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format13 } from '../../constants';
+import { format3 } from '../../constants';
 
 import { format9 } from '../../constants';
 
 /** Gabon */
-const GA: PhoneNumberData = [241, 'GA', 7, format13, 8, format9];
+const GA: PhoneNumberData = [241, 'GA', 7, format3, 8, format9];
 
 export default GA;
