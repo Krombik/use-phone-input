@@ -2,7 +2,8 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-/** American Samoa */
-const AS = /^(?:684(?:2(?:48|5[2468]|7[246])|7(?:3[13]|70|82))\d{4})$/;
+/** Western Sahara */
+const EH =
+  /^(?:(?:6(?:[0-79]\d|8[0-247-9])|7(?:[016-8]\d|2[0-8]|5[0-5]))\d{6})$/;
 
-export default AS;
+export default EH;

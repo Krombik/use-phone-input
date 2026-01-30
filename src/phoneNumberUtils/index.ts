@@ -237,6 +237,7 @@ import VA from '../phoneNumberFormats/VA';
 import VE from '../phoneNumberFormats/VE';
 import VN from '../phoneNumberFormats/VN';
 import WF from '../phoneNumberFormats/WF';
+import EH from '../phoneNumberFormats/EH';
 import YE from '../phoneNumberFormats/YE';
 import ZM from '../phoneNumberFormats/ZM';
 import ZW from '../phoneNumberFormats/ZW';
@@ -480,6 +481,7 @@ const phoneNumberUtils = createPhoneNumberUtils([
   VE,
   VN,
   WF,
+  EH,
   YE,
   ZM,
   ZW,
