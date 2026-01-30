@@ -63,6 +63,7 @@ import DZ from './DZ';
 import EC from './EC';
 import EE from './EE';
 import EG from './EG';
+import EH from './EH';
 import ER from './ER';
 import ES from './ES';
 import ET from './ET';
@@ -304,6 +305,7 @@ const phoneNumberValidationPatterns = {
   EC,
   EE,
   EG,
+  EH,
   ER,
   ES,
   ET,
