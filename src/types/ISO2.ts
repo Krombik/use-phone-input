@@ -64,6 +64,7 @@ type ISO2 =
   | 'EC'
   | 'EE'
   | 'EG'
+  | 'EH'
   | 'ER'
   | 'ES'
   | 'ET'
