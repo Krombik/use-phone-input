@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format2 } from '../../constants';
+import { format8 } from '../../constants';
 
 /** Vietnam */
-const VN: PhoneNumberData = [84, 'VN', 9, format2];
+const VN: PhoneNumberData = [84, 'VN', 9, format8];
 
 export default VN;
