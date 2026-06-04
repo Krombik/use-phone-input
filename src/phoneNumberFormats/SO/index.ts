@@ -6,9 +6,9 @@ import PhoneNumberData from '../../types/PhoneNumberData';
 
 import { format1 } from '../../constants';
 
-import { format2 } from '../../constants';
+import { format5 } from '../../constants';
 
 /** Somalia */
-const SO: PhoneNumberData = [252, 'SO', 8, format1, 9, format2];
+const SO: PhoneNumberData = [252, 'SO', 8, format1, 9, format5];
 
 export default SO;
