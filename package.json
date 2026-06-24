@@ -1,6 +1,6 @@
 {
   "name": "use-phone-input",
-  "version": "1.1.34",
+  "version": "1.1.35",
   "description": "Simplify phone number handling in React applications with automatic formatting, validation, and country code selection for international numbers",
   "author": "Krombik",
   "license": "MIT",
@@ -49,5 +49,6 @@
   "sideEffects": false,
   "dependencies": {
     "react-helpful-utils": "^1.0.1"
-  }
+  },
+  "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b"
 }
