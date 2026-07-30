@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format15 } from '../../constants';
+import { format14 } from '../../constants';
 
 /** Cuba */
-const CU: PhoneNumberData = [53, 'CU', 8, format15];
+const CU: PhoneNumberData = [53, 'CU', 8, format14];
 
 export default CU;

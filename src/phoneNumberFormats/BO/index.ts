@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format14 } from '../../constants';
+import { format25 } from '../../constants';
 
 /** Bolivia */
-const BO: PhoneNumberData = [591, 'BO', 8, format14];
+const BO: PhoneNumberData = [591, 'BO', 8, format25];
 
 export default BO;

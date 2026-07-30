@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format18 } from '../../constants';
+import { format17 } from '../../constants';
 
 /** India */
-const IN: PhoneNumberData = [91, 'IN', 10, format18];
+const IN: PhoneNumberData = [91, 'IN', 10, format17];
 
 export default IN;
