@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format14 } from '../../constants';
+import { format9 } from '../../constants';
 
 /** Faroe Islands */
-const FO: PhoneNumberData = [298, 'FO', 6, format14];
+const FO: PhoneNumberData = [298, 'FO', 6, format9];
 
 export default FO;

@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format25 } from '../../constants';
+import { format24 } from '../../constants';
 
 /** Chile */
-const CL: PhoneNumberData = [56, 'CL', 9, format25];
+const CL: PhoneNumberData = [56, 'CL', 9, format24];
 
 export default CL;
