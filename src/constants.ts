@@ -24,7 +24,7 @@ export const format1 = '00 0000000000';
 export const format5 = '00 000 00000';
 
 /** @internal */
-export const format15 = '0 00000000';
+export const format14 = '0 00000000';
 
 /** @internal */
 export const format4 = '000 00 00 00';
@@ -45,13 +45,13 @@ export const format11 = '0000 000000';
 export const format9 = '00 00 00 0000';
 
 /** @internal */
-export const format18 = '00000 000000';
+export const format17 = '00000 000000';
 
 /** @internal */
-export const format25 = '0 0000 0000';
+export const format24 = '0 0000 0000';
 
 /** @internal */
-export const format19 = '000-0000000';
+export const format18 = '000-0000000';
 
 /** @internal */
 export const format32 = '00-0000-0000';
@@ -63,7 +63,7 @@ export const format12 = '0 000 000000';
 export const format13 = '00 00 000 000';
 
 /** @internal */
-export const format14 = '00000000';
+export const format25 = '00000000';
 
 /** @internal */
-export const format20 = '0000-000000';
+export const format19 = '0000-000000';
