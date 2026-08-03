@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format19 } from '../../constants';
+import { format18 } from '../../constants';
 
 /** Nepal */
-const NP: PhoneNumberData = [977, 'NP', 10, format19];
+const NP: PhoneNumberData = [977, 'NP', 10, format18];
 
 export default NP;
