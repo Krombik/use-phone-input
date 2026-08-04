@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format19 } from '../../constants';
+import { format18 } from '../../constants';
 
 /** Maldives */
-const MV: PhoneNumberData = [960, 'MV', 7, format19];
+const MV: PhoneNumberData = [960, 'MV', 7, format18];
 
 export default MV;
