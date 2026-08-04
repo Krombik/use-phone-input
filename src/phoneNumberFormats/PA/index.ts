@@ -4,11 +4,11 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
+import { format18 } from '../../constants';
+
 import { format19 } from '../../constants';
 
-import { format20 } from '../../constants';
-
 /** Panama */
-const PA: PhoneNumberData = [507, 'PA', 7, format19, 8, format20];
+const PA: PhoneNumberData = [507, 'PA', 7, format18, 8, format19];
 
 export default PA;

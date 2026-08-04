@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '../../types/PhoneNumberData';
 
-import { format19 } from '../../constants';
+import { format18 } from '../../constants';
 
 /** Suriname */
-const SR: PhoneNumberData = [597, 'SR', 7, format19];
+const SR: PhoneNumberData = [597, 'SR', 7, format18];
 
 export default SR;
