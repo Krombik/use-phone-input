@@ -3,6 +3,6 @@
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
 /** Mozambique */
-const MZ = /^(?:8(?:[2-79]\d|80)\d{6})$/;
+const MZ = /^(?:8[2-9]\d{7})$/;
 
 export default MZ;
