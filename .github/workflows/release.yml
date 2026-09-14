@@ -15,7 +15,7 @@ on:
         description: 'Version bump'
         type: choice
         default: patch
-        options: [patch, minor, major]
+        options: [patch, minor, major, none]
 
 concurrency:
   group: release
@@ -49,11 +49,19 @@ jobs:
 
       # touches package.json only, so the paths filter above keeps this from
       # re-triggering the workflow
-      - name: Bump version
+      - name: Version
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          npm version "${{ inputs.bump || 'patch' }}" -m "%s"
+          BUMP="${{ inputs.bump || 'patch' }}"
+          # `none` publishes the version already in package.json - for a release
+          # whose number was set by hand, such as a major
+          if [ "$BUMP" = none ]; then
+            VERSION="v$(node -p "require('./package.json').version")"
+            git tag -a "$VERSION" -m "$VERSION"
+          else
+            npm version "$BUMP" -m "%s"
+          fi
           git push --follow-tags
 
       - run: pnpm run build
