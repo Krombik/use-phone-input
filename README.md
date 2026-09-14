@@ -31,7 +31,6 @@ pnpm add use-phone-input
 - [useInternationalPhoneInput](#useinternationalphoneinput)
 - [createPhoneNumberUtils](#createphonenumberutils)
 - [isPhoneNumberValid](#isphonenumbervalid)
-- [isPhoneNumberValidAsync](#isphonenumbervalidasync)
 
 ### useInternationalPhoneInput
 
@@ -157,18 +156,6 @@ import US from 'use-phone-input/phoneValidationPatterns/US';
 isPhoneNumberValid(phoneValidationPatterns, value);
 
 isPhoneNumberValid({ CA, US }, value);
-```
-
----
-
-### isPhoneNumberValidAsync
-
-Checks if a given international phone number is valid
-
-> This method uses [dynamic import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import) under the hood, use only if your builder supports it
-
-```ts
-const isPhoneNumberValidAsync = (value: PhoneNumber) => Promise<boolean>;
 ```
 
 ---

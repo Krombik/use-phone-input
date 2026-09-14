@@ -2,13 +2,13 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { format1 } from '../../constants';
+import { formateb1cb0f5 } from '#src/constants';
 
-import { format5 } from '../../constants';
+import { format639d8310 } from '#src/constants';
 
 /** South Africa */
-const ZA: PhoneNumberData = [27, 'ZA', 6, format1, 9, format5];
+const ZA: PhoneNumberData = [27, 'ZA', 6, formateb1cb0f5, 9, format639d8310];
 
 export default ZA;

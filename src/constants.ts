@@ -12,58 +12,58 @@ export const MAX_NUMBER_LENGTH = 13;
 export const MASK_SYMBOL = '0';
 
 /** @internal */
-export const format0 = '000-000-0000';
+export const format0483894f = '0 00 00 00 00';
 
 /** @internal */
-export const format2 = '000 000 00000';
+export const format6675ac96 = '0 000 000000';
 
 /** @internal */
-export const format1 = '00 0000000000';
+export const format7a289a8f = '0 0000 0000';
 
 /** @internal */
-export const format5 = '00 000 00000';
+export const format553aee19 = '0 00000000';
 
 /** @internal */
-export const format14 = '0 00000000';
+export const formatd23e165f = '00 00 00 0000';
 
 /** @internal */
-export const format4 = '000 00 00 00';
+export const formatd014eebe = '00 00 000 000';
 
 /** @internal */
-export const format3 = '0 00 00 00 00';
+export const format48539063 = '00 000 00 00';
 
 /** @internal */
-export const format8 = '00 000 00 00';
+export const format639d8310 = '00 000 00000';
 
 /** @internal */
-export const format7 = '000 0000000000';
+export const formateb1cb0f5 = '00 0000000000';
 
 /** @internal */
-export const format11 = '0000 000000';
+export const format09349b7f = '00-0000-0000';
 
 /** @internal */
-export const format9 = '00 00 00 0000';
+export const formatb15a8a20 = '000 00 00 00';
 
 /** @internal */
-export const format17 = '00000 000000';
+export const formatfb2dc677 = '000 000 00000';
 
 /** @internal */
-export const format24 = '0 0000 0000';
+export const format94bbe1f2 = '000 0000000000';
 
 /** @internal */
-export const format18 = '000-0000000';
+export const formata2b5e507 = '000-000-0000';
 
 /** @internal */
-export const format32 = '00-0000-0000';
+export const formata708ed47 = '000-0000000';
 
 /** @internal */
-export const format12 = '0 000 000000';
+export const formatd44737af = '0000 000000';
 
 /** @internal */
-export const format13 = '00 00 000 000';
+export const formate5983ee8 = '0000-000000';
 
 /** @internal */
-export const format25 = '00000000';
+export const formateb431b37 = '00000 000000';
 
 /** @internal */
-export const format19 = '0000-000000';
+export const format7e071fd9 = '00000000';

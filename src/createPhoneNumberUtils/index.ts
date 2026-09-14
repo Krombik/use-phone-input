@@ -1,11 +1,11 @@
-import type { PhoneNumberUtils } from '../types';
-import type PhoneNumberData from '../types/PhoneNumberData';
-import type ISO2 from '../types/ISO2';
+import type { PhoneNumberUtils } from '#src/types';
+import type PhoneNumberData from '#src/types/PhoneNumberData';
+import type ISO2 from '#src/types/ISO2';
 import {
   MASK_SYMBOL,
   MAX_CALLING_CODE_LENGTH,
   MAX_NUMBER_LENGTH,
-} from '../constants';
+} from '#src/constants';
 
 /**
  * Generates utility functions for formatting, parsing, and managing international phone numbers
@@ -45,7 +45,9 @@ const createPhoneNumberUtils = (
     setPrefix(newPrefix) {
       prefix = newPrefix;
     },
-    getCountryCode: iso2DataMap.get.bind(iso2DataMap),
+    getCountryCode: iso2DataMap.get.bind(
+      iso2DataMap
+    ) as PhoneNumberUtils['getCountryCode'],
     toPhoneNumber(value, estimatedIso2) {
       let countries: PhoneNumberData[] | undefined;
 

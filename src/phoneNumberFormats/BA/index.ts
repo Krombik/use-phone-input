@@ -2,13 +2,13 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { format5 } from '../../constants';
+import { format639d8310 } from '#src/constants';
 
-import { format9 } from '../../constants';
+import { formatd23e165f } from '#src/constants';
 
 /** Bosnia & Herzegovina */
-const BA: PhoneNumberData = [387, 'BA', 8, format5, 9, format9];
+const BA: PhoneNumberData = [387, 'BA', 8, format639d8310, 9, formatd23e165f];
 
 export default BA;

@@ -1,0 +1,64 @@
+name: Release
+
+on:
+  # called by cron-action.yml once a metadata sync has been committed, so every
+  # sync ships as a patch release and consumers get fresh metadata from a plain
+  # `npm update` without any manual step
+  workflow_call:
+  # a human pushing to src/** directly still releases - `[skip release]` opts out
+  push:
+    branches: [main]
+    paths: ['src/**']
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: 'Version bump'
+        type: choice
+        default: patch
+        options: [patch, minor, major]
+
+concurrency:
+  group: release
+
+jobs:
+  release:
+    if: "!contains(github.event.head_commit.message, '[skip release]')"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      # required for npm trusted publishing (OIDC) and --provenance
+      id-token: write
+    steps:
+      # the sync commits through the API, so github.sha still points at the commit
+      # before it - check out the branch tip instead of building stale sources
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref_name }}
+
+      # version comes from the packageManager field in package.json
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm run typecheck
+
+      # touches package.json only, so the paths filter above keeps this from
+      # re-triggering the workflow
+      - name: Bump version
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          npm version "${{ inputs.bump || 'patch' }}" -m "%s"
+          git push --follow-tags
+
+      - run: pnpm run build
+
+      # trusted publishing needs npm >= 11.5.1
+      - run: npm install -g npm@latest
+
+      - run: npm publish ./build --provenance --access public

@@ -1,4 +1,4 @@
-import { PhoneNumber } from '../types';
+import { PhoneNumber } from '#src/types';
 
 /**
  * Checks if the given international phone number is valid based on the provided {@link phoneValidationPatterns validation patterns}.

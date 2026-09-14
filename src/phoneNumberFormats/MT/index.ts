@@ -2,11 +2,11 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { formatd44737af } from '#src/constants';
 
 /** Malta */
-const MT: PhoneNumberData = [356, 'MT', 8, format11];
+const MT: PhoneNumberData = [356, 'MT', 8, formatd44737af];
 
 export default MT;

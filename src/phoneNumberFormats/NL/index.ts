@@ -2,13 +2,13 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { format14 } from '../../constants';
+import { format553aee19 } from '#src/constants';
 
-import { format2 } from '../../constants';
+import { formatfb2dc677 } from '#src/constants';
 
 /** Netherlands */
-const NL: PhoneNumberData = [31, 'NL', 9, format14, 11, format2];
+const NL: PhoneNumberData = [31, 'NL', 9, format553aee19, 11, formatfb2dc677];
 
 export default NL;

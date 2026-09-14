@@ -1,5 +1,5 @@
 import { FormEventHandler } from 'react';
-import ISO2 from './ISO2';
+import ISO2 from '#src/types/ISO2';
 
 export type PhoneNumber = {
   iso2: ISO2 | '';

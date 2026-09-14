@@ -2,13 +2,13 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { format7 } from '../../constants';
+import { format94bbe1f2 } from '#src/constants';
 
-import { format5 } from '../../constants';
+import { format639d8310 } from '#src/constants';
 
 /** Gambia */
-const GM: PhoneNumberData = [220, 'GM', 7, format7, 9, format5];
+const GM: PhoneNumberData = [220, 'GM', 7, format94bbe1f2, 9, format639d8310];
 
 export default GM;

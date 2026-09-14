@@ -2,13 +2,13 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { format3 } from '../../constants';
+import { format0483894f } from '#src/constants';
 
-import { format9 } from '../../constants';
+import { formatd23e165f } from '#src/constants';
 
 /** Gabon */
-const GA: PhoneNumberData = [241, 'GA', 7, format3, 8, format9];
+const GA: PhoneNumberData = [241, 'GA', 7, format0483894f, 8, formatd23e165f];
 
 export default GA;

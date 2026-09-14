@@ -2,13 +2,13 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { format9 } from '../../constants';
+import { formatd23e165f } from '#src/constants';
 
-import { format13 } from '../../constants';
+import { formatd014eebe } from '#src/constants';
 
 /** Laos */
-const LA: PhoneNumberData = [856, 'LA', 9, format9, 10, format13];
+const LA: PhoneNumberData = [856, 'LA', 9, formatd23e165f, 10, formatd014eebe];
 
 export default LA;

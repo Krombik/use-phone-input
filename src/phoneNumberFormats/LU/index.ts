@@ -2,11 +2,11 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { format2 } from '../../constants';
+import { formatfb2dc677 } from '#src/constants';
 
 /** Luxembourg */
-const LU: PhoneNumberData = [352, 'LU', 9, format2];
+const LU: PhoneNumberData = [352, 'LU', 9, formatfb2dc677];
 
 export default LU;

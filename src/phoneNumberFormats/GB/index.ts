@@ -2,11 +2,11 @@
 
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
-import PhoneNumberData from '../../types/PhoneNumberData';
+import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { format11 } from '../../constants';
+import { formatd44737af } from '#src/constants';
 
 /** United Kingdom */
-const GB: PhoneNumberData = [44, 'GB', 10, format11];
+const GB: PhoneNumberData = [44, 'GB', 10, formatd44737af];
 
 export default GB;

@@ -1,15 +1,14 @@
-import ISO2 from './ISO2';
+import ISO2 from '#src/types/ISO2';
 
 type PhoneNumberMainData = [
   countryCode: number,
   iso2: ISO2,
   maxLength: number,
   format: string,
-  ...(string | number)[]
+  ...(string | number)[],
 ];
 
 type PhoneNumberData =
-  | PhoneNumberMainData
-  | [...PhoneNumberMainData, leadingDigits: RegExp];
+  PhoneNumberMainData | [...PhoneNumberMainData, leadingDigits: RegExp];
 
 export default PhoneNumberData;

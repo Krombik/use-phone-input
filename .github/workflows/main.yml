@@ -1,15 +1,21 @@
-name: "cron-action"
+name: 'cron-action'
+
 on:
   schedule:
     - cron: '17 2 * * *'
   workflow_dispatch:
 
 jobs:
-  singleJobName:
+  sync:
     runs-on: ubuntu-latest
-    permissions: write-all
+    permissions:
+      # commits the metadata straight onto main - no PR is opened
+      contents: write
+    outputs:
+      updated: ${{ steps.metadata.outputs.updated }}
     steps:
       - name: Update metadata
+        id: metadata
         uses: Krombik/action-update-phone-metadata@main
         with:
           gh-token: ${{ secrets.GITHUB_TOKEN }}
@@ -20,3 +26,13 @@ jobs:
           create-phone-number-utils-folder-path: 'createPhoneNumberUtils'
           phone-number-formats-folder-path: 'phoneNumberFormats'
           phone-number-validation-patterns-folder-path: 'phoneNumberValidationPatterns'
+
+  # A commit made with GITHUB_TOKEN does not trigger other workflows, so the push
+  # above will never set off release.yml on its own - it has to be called.
+  release:
+    needs: sync
+    if: needs.sync.outputs.updated != '0'
+    permissions:
+      contents: write
+      id-token: write
+    uses: ./.github/workflows/release.yml

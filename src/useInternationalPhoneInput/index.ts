@@ -1,7 +1,7 @@
-import { DataTuple, PhoneNumberUtils, PhoneNumber } from '../types';
+import { DataTuple, PhoneNumberUtils, PhoneNumber } from '#src/types';
 
-import useConst from 'react-helpful-utils/useConst';
-import ISO2 from '../types/ISO2';
+import ISO2 from '#src/types/ISO2';
+import { useRef } from 'react';
 
 /**
  * @example
@@ -47,25 +47,40 @@ const useInternationalPhoneInput = (
   value: PhoneNumber,
   onChange: (value: PhoneNumber) => void
 ) => {
-  const data = useConst<DataTuple>(() => {
+  const dataRef = useRef<DataTuple | null>(null);
+
+  let data = dataRef.current;
+
+  if (data === null) {
     let estimatedIso2: ISO2 | undefined;
 
-    return [
+    dataRef.current = data = [
       value,
       onChange,
       ({ target, nativeEvent }) => {
         let { value: inputValue, selectionStart } = target as HTMLInputElement;
 
-        const prevInputValue = data[0].formattedValue;
+        const prevInputValue = data![0].formattedValue;
 
         if (
           selectionStart &&
-          (nativeEvent as InputEvent).inputType == 'deleteContentBackward' &&
+          prevInputValue.length - inputValue.length == 1 &&
           /\D/.test(prevInputValue[selectionStart])
         ) {
-          inputValue =
-            inputValue.slice(0, selectionStart - 1) +
-            inputValue.slice(selectionStart--);
+          const { inputType } = nativeEvent as InputEvent;
+
+          if (inputType == 'deleteContentBackward') {
+            inputValue =
+              inputValue.slice(0, selectionStart - 1) +
+              inputValue.slice(selectionStart--);
+          } else if (
+            inputType == 'deleteContentForward' &&
+            selectionStart < inputValue.length
+          ) {
+            inputValue =
+              inputValue.slice(0, selectionStart) +
+              inputValue.slice(selectionStart + 1);
+          }
         }
 
         const nextValue = utils.toPhoneNumber(inputValue, estimatedIso2);
@@ -77,7 +92,7 @@ const useInternationalPhoneInput = (
             estimatedIso2 = undefined;
           }
 
-          data[1](nextValue);
+          data![1](nextValue);
         }
 
         if (selectionStart != inputValue.length) {
@@ -101,7 +116,7 @@ const useInternationalPhoneInput = (
         }
       },
       (iso2) => {
-        const prevValue = data[0];
+        const prevValue = data![0];
 
         if (iso2 != prevValue.iso2) {
           estimatedIso2 = iso2;
@@ -112,12 +127,12 @@ const useInternationalPhoneInput = (
           );
 
           if (prevValue.formattedValue != nextValue.formattedValue) {
-            data[1](nextValue);
+            data![1](nextValue);
           }
         }
       },
     ];
-  });
+  }
 
   data[0] = value;
 
