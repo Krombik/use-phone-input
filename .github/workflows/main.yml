@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Update metadata
         id: metadata
-        uses: Krombik/action-update-phone-metadata@main
+        uses: Krombik/action-update-phone-metadata@v6
         with:
           gh-token: ${{ secrets.GITHUB_TOKEN }}
           constants-file-path: 'constants.ts'
