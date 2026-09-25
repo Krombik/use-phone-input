@@ -68,8 +68,9 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
 
-      # version comes from the packageManager field in package.json
       - uses: pnpm/action-setup@v6
+        with:
+          version: latest
 
       - uses: actions/setup-node@v7
         with:
@@ -102,7 +103,10 @@ jobs:
 
       - run: pnpm run build
 
-      # trusted publishing needs npm >= 11.5.1
-      - run: npm install -g npm@latest
+      # trusted publishing needs npm >= 11.5.1. Pinned rather than @latest:
+      # 12.0.2 is the version that published 2.0.1, and every run since 12.1.0
+      # came out has died in the OIDC exchange with ENEEDAUTH.
+      - run: npm install -g npm@12.0.2
 
-      - run: npm publish ./build --provenance --access public
+      # npm does not log why an OIDC exchange failed unless asked - see npm/cli#9923
+      - run: npm publish ./build --provenance --access public --loglevel verbose

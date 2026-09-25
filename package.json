@@ -51,6 +51,5 @@
     "telephone",
     "international"
   ],
-  "sideEffects": false,
-  "packageManager": "pnpm@12.3.4"
+  "sideEffects": false
 }
