@@ -1,10 +1,10 @@
 name: Release
 
 on:
-  # called by cron-action.yml once a metadata sync has been committed, so every
-  # sync ships as a patch release and consumers get fresh metadata from a plain
-  # `npm update` without any manual step
-  workflow_call:
+  # picks up upstream metadata changes and, when there are any, releases them in
+  # the same run - so consumers get fresh metadata from a plain `npm update`
+  schedule:
+    - cron: '17 2 * * *'
   # a human pushing to src/** directly still releases - `[skip release]` opts out
   push:
     branches: [main]
@@ -21,8 +21,41 @@ concurrency:
   group: release
 
 jobs:
+  # Kept in this file rather than its own: npm's trusted publishing validates the
+  # filename of the workflow that *starts* the run, so a `workflow_call` into a
+  # separate release.yml makes the OIDC exchange fail with ENEEDAUTH.
+  sync:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      # commits the metadata straight onto main - no PR is opened. Deliberately
+      # no id-token here, so the sync action can never reach npm directly.
+      contents: write
+    outputs:
+      updated: ${{ steps.metadata.outputs.updated }}
+    steps:
+      - name: Update metadata
+        id: metadata
+        uses: Krombik/action-update-phone-metadata@v6
+        with:
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+          constants-file-path: 'constants.ts'
+          phone-number-data-type-file-path: 'types/PhoneNumberData.ts'
+          iso2-type-file-path: 'types/ISO2.ts'
+          phone-number-utils-folder-path: 'phoneNumberUtils'
+          create-phone-number-utils-folder-path: 'createPhoneNumberUtils'
+          phone-number-formats-folder-path: 'phoneNumberFormats'
+          phone-number-validation-patterns-folder-path: 'phoneNumberValidationPatterns'
+
   release:
-    if: "!contains(github.event.head_commit.message, '[skip release]')"
+    needs: sync
+    # `!cancelled()` is what lets this run at all on push and workflow_dispatch,
+    # where `sync` is skipped. On the cron path it only releases when the sync
+    # actually committed something.
+    if: >-
+      !cancelled() && needs.sync.result != 'failure' &&
+      (github.event_name != 'schedule' || needs.sync.outputs.updated != '0') &&
+      !contains(github.event.head_commit.message, '[skip release]')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -58,7 +91,10 @@ jobs:
           # whose number was set by hand, such as a major
           if [ "$BUMP" = none ]; then
             VERSION="v$(node -p "require('./package.json').version")"
-            git tag -a "$VERSION" -m "$VERSION"
+            # the tag may already exist when a previous run tagged and pushed but
+            # failed later on, in publish - re-running must not die here
+            git rev-parse -q --verify "refs/tags/$VERSION" >/dev/null ||
+              git tag -a "$VERSION" -m "$VERSION"
           else
             npm version "$BUMP" -m "%s"
           fi
