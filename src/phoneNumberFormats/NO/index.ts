@@ -4,9 +4,9 @@
 
 import PhoneNumberData from '#src/types/PhoneNumberData';
 
-import { formatd23e165f } from '#src/constants';
+import { format29ae9188 } from '#src/constants';
 
 /** Norway */
-const NO: PhoneNumberData = [47, 'NO', 8, formatd23e165f];
+const NO: PhoneNumberData = [47, 'NO', 8, format29ae9188];
 
 export default NO;

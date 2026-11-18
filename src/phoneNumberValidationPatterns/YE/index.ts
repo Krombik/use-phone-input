@@ -3,6 +3,6 @@
 // This file has been automatically generated. Any modifications made to this file will be overwritten the next time it is regenerated. Please refrain from editing this file directly.
 
 /** Yemen */
-const YE = /^(?:7[01378]\d{7})$/;
+const YE = /^(?:7[0-378]\d{7})$/;
 
 export default YE;

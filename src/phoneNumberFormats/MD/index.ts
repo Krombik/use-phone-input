@@ -4,7 +4,9 @@
 
 import PhoneNumberData from '#src/types/PhoneNumberData';
 
+import { format29ae9188 } from '#src/constants';
+
 /** Moldova */
-const MD: PhoneNumberData = [373, 'MD', 8, '000 00 000'];
+const MD: PhoneNumberData = [373, 'MD', 8, format29ae9188];
 
 export default MD;
